@@ -23,7 +23,7 @@ document.getElementById('city-select').addEventListener('change', function() {
         country: "EG",
         city: selectedCity
     }
-    axios.get('http://api.aladhan.com/v1/timingsByCity', {
+    axios.get('https://api.aladhan.com/v1/timingsByCity', {
         params: params
     })
     .then(function (response) {        
