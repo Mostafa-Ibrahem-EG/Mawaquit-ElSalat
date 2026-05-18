@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>مواقيت الصلاة</title>
+        <link rel="stylesheet" href="css/output.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div>
+            <nav class="p-4 navBar">
+                <div
+                    class="container mx-auto flex justify-between items-center">
+                    <a href="index.html"
+                        class="text-white text-lg font-bold">مواقيت الصلاة</a>
+                    <div>
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-white mx-2">الرئيسية</a>
+                        <a href="aboutUs.html"
+                            class="text-gray-300 hover:text-white mx-2">عن
+                            التطبيق</a>
+                        <a href="contactUs.html"
+                            class="text-gray-300 hover:text-white mx-2">اتصل
+                            بنا</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <div class="text-white p-6 text-center afterNav">
+                <h2 class="text-3xl font-bold mb-4">احصل على مواقيت الصلاة
+                    في
+                    مدينتك</h2>
+                <p class="mt-2 mb-4 font-medium">أدخل اسم المدينة لمعرفة مواقيت
+                    الصلاة بدقة</p>
+                <select name="city" id="city-select"
+                    class="border p-2 rounded bg-gray-800 text-white">
+                </select>
+            </div>
+        </div>
+        <div class=" p-4 mb-1 text-center ">
+            <span id="current-date-gregorian"
+                class="text-white font-bold text-center inline-block bg-gray-800"></span><br>
+            <span id="current-date-hijri"
+                class="text-white font-bold text-center inline-block bg-gray-800"></span>
+        </div>
+        <div class="container mx-auto">
+            <div id="prayer-times"
+                class="flex justify-center items-center mb-4">
+                <div
+                    class="bg-white p-4 rounded-2xl shadow-xl text-center w-full max-w-md">
+                    <h3
+                        class="text-xl font-bold mb-2 text-blue-600 pb-2">الفجر</h3>
+                    <p id="fajr-time"
+                        class="text-gray-700 text-lg mb-4 border-b">--:--</p>
+                    <h3
+                        class="text-xl font-bold mb-2 text-amber-500 pb-2">الشروق</h3>
+                    <p id="shuruq-time"
+                        class="text-gray-700 text-lg mb-4 border-b">--:--</p>
+                    <h3
+                        class="text-xl font-bold mb-2 text-blue-600 pb-2">الظهر</h3>
+                    <p id="dhuhr-time"
+                        class="text-gray-700 text-lg mb-4 border-b">--:--</p>
+                    <h3
+                        class="text-xl font-bold mb-2 text-blue-600 pb-2">العصر</h3>
+                    <p id="asr-time"
+                        class="text-gray-700 text-lg mb-4 border-b">--:--</p>
+                    <h3
+                        class="text-xl font-bold mb-2 text-indigo-700 pb-2">المغرب</h3>
+                    <p id="maghrib-time"
+                        class="text-gray-700 text-lg mb-4 border-b">--:--</p>
+                    <h3
+                        class="text-xl font-bold mb-2 text-purple-900 pb-2">العشاء</h3>
+                    <p id="isha-time"
+                        class="text-gray-700 text-lg border-b">--:--</p>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-gray-800 text-white p-4 text-center">
+            <p> مواقيت الصلاة .<br>  جميع الحقوق محفوظة &copy; 2026.</p>
+        </footer>
+        <script src="node_modules/axios/dist/axios.min.js"></script>
+        <script src="js/axios.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

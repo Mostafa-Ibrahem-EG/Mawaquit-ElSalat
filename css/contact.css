@@ -1,0 +1,26 @@
+.contact{
+    color: #3b82f6;
+    text-decoration: underline;
+}
+.div-contact{
+    width: 80%;
+    padding: 20px;
+}
+.facebook-link, .linkedin-link{
+    color: #3b82f6;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+.facebook-link:hover, .linkedin-link:hover{
+    color: #2563eb;
+}
+.whatsapp-link{
+    color: #25D366;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+.whatsapp-link:hover{
+    color: #1DA851;
+}
